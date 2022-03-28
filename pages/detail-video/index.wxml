@@ -1,0 +1,26 @@
+<!--pages/detail-video/index.wxml-->
+<video
+  class="video"
+  src="{{mvURLInfo.url}}"
+  enable-danmu="true" 	
+  danmu-btn="true"
+  show-center-play-btn="true"
+  enable-play-gesture="true"
+  title="{{mvDetail.artistName}}"
+  vslide-gesture-in-fullscreen
+  show-casting-button="true"
+  show-background-playback-button="true"
+  background-poster="true"
+  show-mute-btn="true"
+  page-gesture="true"
+  show-screen-lock-button="true"
+  show-snapshot-button="true"
+  show-background-playback-button="true"
+  background-poster
+  enable-progress-gesture
+  referrer-policy="origin"
+  play-btn-position="center"
+  danmu-list="{{danmuList}}"
+  >
+ </video>
+<view class="mvTitle" wx:for="{{100}}">测试{{index+1}}</view>
