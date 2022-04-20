@@ -1,0 +1,42 @@
+/* components/videos-related/index.wxss */
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+}
+.left{ 
+  /* flex: 40%; */
+  width: 40%;
+  height: 80px;
+}
+.right{
+  position: relative;
+  width: 60%;
+  height: 80px;
+  /* flex: 60%; */
+  margin-left: 10px;
+}
+.left .image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.right .title{
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 32rpx;
+  word-wrap:normal;
+}
+.right .name{
+  position: absolute;
+  bottom: 0;
+  font-size: 32rpx;
+}

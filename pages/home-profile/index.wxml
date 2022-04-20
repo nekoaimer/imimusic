@@ -1,0 +1,9 @@
+<!--pages/home-profile/index.wxml-->
+<view class="container">
+  <view class="userInfo">
+    <view class="avatar"><image class="avatar-icon" mode="widthFix" src="{{userInfo.avatarUrl}}"></image></view>
+    <view class="name">{{userInfo.nickName}}</view>
+  </view>
+  <button class="quitBtn" type="default" wx:if="{{ hasUserInfo }}" bindtap="handleLoginOut">退出</button>  
+  <button class="loginBtn" type="default" wx:else="{{ !hasUserInfo }}" bindtap="getUserProfile">登录</button>  
+</view>

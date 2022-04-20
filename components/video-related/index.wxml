@@ -1,0 +1,12 @@
+<!--components/videos-related/index.wxml-->
+<block wx:for="{{item}}" wx:key="vid">
+  <view class="item" bindtap="handleVideoClick" data-item="{{item}}">
+    <view class="left">
+      <image class="image" src="{{item.coverUrl}}" mode="aspectFill"></image>
+    </view>
+    <view class="right">
+      <view class="title">{{item.title}}</view>
+      <view class="name">{{item.creator[0].userName}}</view>
+    </view>
+  </view>
+</block>

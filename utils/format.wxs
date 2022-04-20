@@ -16,7 +16,7 @@ function padLeftZero(time){
 
 function formatDuration(duration){
   duration = duration / 1000
-  console.log(duration, 13456465);
+  // console.log(duration);
 
   var minute = Math.floor(duration / 60)
   var second = Math.floor(duration % 60)

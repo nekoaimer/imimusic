@@ -1,0 +1,38 @@
+<!--pages/detail-video/index.wxml-->
+<wxs src="../../../utils/format.wxs" module="format"></wxs>
+<video
+  class="video"
+  src="{{mvURLInfo.url}}"
+  enable-danmu="true" 	
+  danmu-btn="true"
+  show-center-play-btn="true"
+  enable-play-gesture="true"
+  title="{{mvDetail.artistName}}"
+  vslide-gesture-in-fullscreen
+  show-casting-button="true"
+  show-background-playback-button="true"
+  background-poster="true"
+  show-mute-btn="true"
+  page-gesture="true"
+  show-screen-lock-button="true"
+  show-snapshot-button="true"
+  show-background-playback-button="true"
+  background-poster
+  enable-progress-gesture
+  referrer-policy="origin"
+  play-btn-position="center"
+  danmu-list="{{danmuList}}"
+  >
+ </video>
+
+<view class="container">
+  <view class="currentMvTitle">
+  <view class="title">{{mvDetail.name || '有bug快撤！'}}</view>
+  <view class="author">{{mvDetail.artists[0].name}}</view>
+  <view class="playInfo">{{format.formatCount(mvDetail.playCount)}}次播放 - {{mvDetail.publishTime}}</view>
+  </view>
+  <view class="recommend">
+    <view class="view">推荐视频</view>
+    <video-related item="{{ relatedVideos}}" bindclick="handleVideoClick"></video-related>
+  </view>
+</view>

@@ -20,15 +20,43 @@
           "scene": null
         },
         {
-          "name": "detail-video",
-          "pathName": "pages/detail-video/index",
-          "query": "id=14498401",
+          "name": "home-music",
+          "pathName": "pages/home-music/index",
+          "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "home-music",
-          "pathName": "pages/home-music/index",
+          "name": "detail-songs-menu",
+          "pathName": "pages/detail-songs/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "detail-search",
+          "pathName": "pages/detail-search/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "music-player",
+          "pathName": "pages/music-player/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "home-profile",
+          "pathName": "pages/home-profile/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "home-video",
+          "pathName": "pages/home-video/index",
           "query": "",
           "scene": null,
           "launchMode": "default"

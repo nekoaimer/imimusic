@@ -1,0 +1,21 @@
+<!--baseui/nav-bar/index.wxml-->
+<view class="nav">
+  <view class="status" style="height: {{statusBarHeight}}px;"></view>
+  <view class="nav-bar" style="height: {{navbarHeight}}px;">
+    <view class="left" bindtap="handleLeftClick">
+      <!-- 这里顺序必须在方面 -->
+      <view class="left-slot"><slot name="left-slot"></slot></view>
+      <view class="left-arrow">
+        <image class="icon" mode="widthFix" src="/assets/images/icons/arrow-left.png"></image>
+      </view>
+    </view>
+    <view class="center">
+      <view class="center-slot"><slot name="center-title"></slot></view>
+      <view class="center-title">{{title}}</view>
+    </view>
+    <view class="right">
+      <view class="right-arrow"><slot name="right-slot"></slot></view>
+      <view class="right-arrow"></view>
+    </view>
+  </view>
+</view>

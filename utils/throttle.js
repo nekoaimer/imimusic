@@ -1,5 +1,5 @@
 function throttle(fn, interval = 1000, options = {
-  leading: false,
+  leading: true,
   trailing: true,
   isRes: true
 }) {

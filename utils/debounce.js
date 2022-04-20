@@ -1,4 +1,4 @@
-function debounce(fn, delay = 1000, immediate = true, isRes = false) {
+export default function debounce(fn, delay = 233, immediate = true, isRes = true) {
   let timer = null
   let isInvoke = true
 
@@ -33,11 +33,10 @@ function debounce(fn, delay = 1000, immediate = true, isRes = false) {
 
   }
 
-  _debounce.cancel = function () {
-    execClearTimeout(timer)
-  }
+  _debounce.cancel = () => execClearTimeout(timer)
 
   return _debounce
 }
 
-export default debounce
+
+
